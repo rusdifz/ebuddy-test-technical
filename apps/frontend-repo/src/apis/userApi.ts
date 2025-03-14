@@ -19,7 +19,6 @@ export async function fetchUsersAPI(
       headers: HEADER,
       params: props,
     });
-    console.log("response suer", response);
     return response.data;
   } catch (error) {
     throw new Error("Failed to fetch users");

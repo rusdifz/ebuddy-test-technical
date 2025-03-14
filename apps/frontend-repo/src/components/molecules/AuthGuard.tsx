@@ -11,7 +11,6 @@ const AuthGuard = () => {
   useEffect(() => {
     const checkAuth = async () => {
       const session = auth.currentUser;
-      console.log("asasa", session);
 
       // Jika belum login atau role tidak sesuai
       if (!session) {

@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Typography, Button, Box } from "@mui/material";
-import Skeleton from "@mui/material/Skeleton";
 import { useRouter } from "next/navigation";
 import { onAuthStateChanged, User as FirebaseUser } from "firebase/auth";
 
@@ -15,7 +14,7 @@ import {
 } from "@/store/actions";
 import { RootState } from "@/store/store";
 
-import DashboardTemplate from "@/components/templates/DashboardTemplates";
+import DashboardTemplate from "@/components/templates/UsersTemplates";
 import DashboardPanel from "@/components/organisms/UserPanel";
 
 import { User } from "@/interfaces/user";
@@ -106,7 +105,6 @@ const UserPage: React.FC = () => {
           Refresh User
         </Button>
       </Box>
-      {/* {loading && <Typography variant="body1">Loading...</Typography>} */}
       {error && (
         <Typography variant="body1" color="error">
           {error}

@@ -80,7 +80,7 @@ const AuthLoginPage: React.FC = () => {
           />
           {errorMsg && <Typography color="error">{errorMsg}</Typography>}
           {loading && <Typography color="error">LOADING.....</Typography>}
-          {/* <Skeleton variant="rectangular" width={210} height={118} /> */}
+
           <Button
             type="submit"
             fullWidth
