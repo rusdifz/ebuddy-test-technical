@@ -1,0 +1,25 @@
+{
+  "name": "@repo/interfaces",
+  "version": "0.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "lint": "eslint . --max-warnings 0",
+    "generate:component": "turbo gen react-component",
+    "check-types": "tsc --noEmit"
+  },
+  "exports": {
+    "./user": "./src/user.interface.ts"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "typescript": "5.7.3",
+    "@turbo/gen": "^2.4.0",
+    "@types/node": "^22.13.0",
+    "eslint": "^9.20.0"
+  }
+}
