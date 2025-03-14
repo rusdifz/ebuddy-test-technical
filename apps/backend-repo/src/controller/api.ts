@@ -4,7 +4,7 @@ import { instanceToPlain, plainToInstance } from "class-transformer";
 import { validate } from "class-validator";
 import * as bcrypt from "bcrypt";
 
-import UserCollection from "@/repository/userCollection";
+import UserCollection from "../repository/userCollection";
 import { setPagination } from "../helpers/pagination.helper";
 import { IPagination } from "../interfaces/pagination.interface";
 import { User } from "../entities/user";
